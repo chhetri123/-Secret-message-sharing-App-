@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script defer src="script.js"></script>
+    <title>Secret message app</title>
+    <style>
+      * {
+        background-color: rgba(0, 0, 0, 1);
+      }
+      .card-panel {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .row {
+        margin-top: 10vh;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+      input {
+        color: #ffb545;
+      }
+      h1 {
+        margin-top: 10vh;
+        text-align: center;
+        font-size: 30px;
+        color: #ffb545;
+        text-decoration: underline;
+      }
+      form label,
+      button,
+      div {
+        color: #00c46a;
+        font-size: 18px;
+      }
+      p {
+        font-size: 18px;
+        color: #ffb545;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Secret Message site</h1>
+    <div class="row">
+      <div class="col s11 offset-s1">
+        <div id="message-show" class="card-panel hide">
+          <p>Your friend's Secret message is:-</p>
+          <h2></h2>
+          <div>
+            <a href="./index.html">Create Your own secret message</a>
+          </div>
+        </div>
+        <div id="message-form" class="card-panel">
+          <form>
+            <label>Enter your secret Message</label>
+            <input id="message-input" />
+            <button class="btn">Create</button>
+          </form>
+        </div>
+
+        <div id="link-form" class="card-panel hide">
+          <div>
+            Share this link with a Friend
+            <input id="link-input" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
